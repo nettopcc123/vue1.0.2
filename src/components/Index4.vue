@@ -11,9 +11,7 @@
     <vue-newlists01></vue-newlists01>
     <vue-banner></vue-banner>
     <h2 class="uitit02">娱乐新闻 <span></span></h2>
-    <div class="iftop06">
-       <iframe ref="iframe" id="bdIframe01" :src="bdTokenUrl01" frameborder="0" scrolling="no" width="100%" height="2200px" ></iframe>
-    </div>
+    <vue-newlists2></vue-newlists2>
   </div>
 </template>
 <script>
@@ -22,6 +20,7 @@ import banner from './../components/banner';
 import newlists from './../components/new_h03';
 import newlists01 from './../components/new_h04';
 import marquee from './../components/marquee';
+import newlists2 from './../components/newlists2';
 //import score from './../components/score';
 
 
@@ -44,11 +43,17 @@ export default {
     'vue-banner':banner,
     'vue-newlists':newlists,
     'vue-newlists01':newlists01,
-    'vue-marquee':marquee
+    'vue-marquee':marquee,
+    'vue-newlists2':newlists2
   },
   mounted: function () {
     this.$nextTick(function () {
         // this.ntime = this.getNowFormatDate();
+        const oIframe = document.getElementById('bdIframe01');
+        const deviceWidth = document.documentElement.clientWidth;
+        const deviceHeight = document.documentElement.clientHeight;
+        oIframe.style.width = deviceWidth + 'px';
+        oIframe.style.height = deviceHeight + 'px';
     })
   },
   methods: {
@@ -65,7 +70,7 @@ export default {
   }
 }
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 @import "scss/base.scss";
 .vrw {
     height: 100%!important;

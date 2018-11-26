@@ -8,7 +8,7 @@
                 </router-link>
              </li>
             <li >
-                <router-link :to="{ name: 'htmlViewSample'}">
+                <router-link :to="{ name: 'newlists4'}">
                     <i class="iconfont icon-news01"></i>
                    <p>资讯</p>
                 </router-link>

@@ -163,7 +163,8 @@ export default {
 .ntit{
   font-size: 0.14rem;
   color:#303030;
-  font-weight: normal
+  font-weight: normal;
+  line-height: 0.28rem;
 }
 .infinite-scroll{
   width: 0.5rem;

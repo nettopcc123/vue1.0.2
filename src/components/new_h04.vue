@@ -199,11 +199,11 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "scss/base.scss";
 .nimg{
     float: left;
-    width:1.4rem;
+    width:35%;
 }
 .nimgbig{
     width:100%;
@@ -220,7 +220,8 @@ export default {
   margin-bottom:0.05rem;
   text-align: left;
   font-size: 0.16rem;
-  color:#5b5b5b
+  color:#5b5b5b;
+  padding:0 2%;
 }
 .nlist li a{
   font-size: 0.16rem;
@@ -230,8 +231,9 @@ export default {
   font-size: 0.18rem;
   color:#303030;
   font-weight: normal;
-  height: 1rem;
+  height: 0.7rem;
   overflow: hidden;
+  line-height: 0.28rem;
 }
 .ntitbig{
   font-size: 0.18rem;
@@ -245,8 +247,8 @@ export default {
   margin:0 auto;
 }
 .nimg img{
-  width: 1.4rem;
-  height:1.2rem;
+  width: 100%;
+  height:0.9rem;
 }
 .nimgbig img{
   width: 100%;
@@ -254,7 +256,7 @@ export default {
 }
 .newsCtn{
     float: right;
-    width:2.1rem;
+    width:62%;
 }
 .newsCtnbig{
     width:100%;

@@ -1,13 +1,22 @@
 
 <template>
   <div class="newlists" id="newlists">
-    <h2 class="itit">极速新闻 <span></span></h2>
+    <!-- <h2 class="itit">极速新闻 <span></span></h2> -->
+   <div class="menu_w">
    <ul class="smeu">
-       <li><router-link :to="{ name: 'newlists1'}">热点新闻</router-link></li>
-       <li><router-link :to="{ name: 'newlists2'}">竞技新闻</router-link></li>
-       <li><router-link :to="{ name: 'newlists3'}">数字新闻</router-link></li>
+       <li><router-link :to="{ name: 'newlists1'}">汽车</router-link></li>
+       <li><router-link :to="{ name: 'newlists2'}">娱乐</router-link></li>
+       <li><router-link :to="{ name: 'newlists3'}">军事</router-link></li>
+       <li><router-link :to="{ name: 'newlists4'}">体育</router-link></li>
+       <li><router-link :to="{ name: 'newlists5'}">NBA</router-link></li>
+       <li><router-link :to="{ name: 'newlists6'}">财经</router-link></li>
+       <li><router-link :to="{ name: 'newlists7'}">科技</router-link></li>
     </ul>
-    <vue-banner01></vue-banner01>
+   <div class="marw">
+    <i class="iconfont icon-down"></i>
+   </div>
+    </div>
+    <!-- <vue-banner01></vue-banner01> -->
     <router-view></router-view>
         <div class="infinite-scroll" v-show="loading">
       <svg class="loader-circular" viewBox="25 25 50 50">
@@ -44,8 +53,12 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "scss/base.scss";
+.vrw{
+    height: 90%;
+}
+
 .nlist{
   display:block;
   text-align: center;
@@ -66,7 +79,8 @@ export default {
 .ntit{
   font-size: 0.14rem;
   color:#303030;
-  font-weight: normal
+  font-weight: normal;
+  line-height: 0.28rem;
 }
 .infinite-scroll{
   width: 0.5rem;
@@ -94,21 +108,24 @@ export default {
     overflow: hidden;
     margin-top:0.08rem;
 }
+.menu_w{
+  width: 3.75rem;
+  display: block;
+  overflow:hidden;
+}
 .smeu{
-    display: block;
     background:#f9f9f9;
     overflow: hidden;
     line-height: 0.36rem;
     color:$bgColor;
+    width: 3.5rem;
+    float:left;
 }
 .smeu li{
-    width:33%;
+    width:0.5rem;
     float:left;
     text-align: center;
     font-size:0.14rem;
-}
-.smeu li:nth-child(2){
-    width:34%;
 }
 .smeu li a{
     color:#ababab;
@@ -121,6 +138,13 @@ export default {
 .smeu .router-link-active{
     color:$bgColor;
     border-bottom:0.01rem solid $bgColor;
+}
+.menu_w .marw{
+  width: 0.25rem;
+  float:right;
+  line-height: 0.36rem;
+  text-align: center;
+  font-size: 0.2rem;
 }
 .vrw {
     width: 100%;

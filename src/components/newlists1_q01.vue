@@ -59,7 +59,7 @@ export default {
     restr:function(value){
       if (!value) return '';
       if (value.length > 2) {
-          return value.replace(/天天彩/, "极速时时彩彩票");
+          return value.replace(/天天彩/, "双色球走势图预判专家");
       }
       return value;
     }
@@ -171,6 +171,7 @@ export default {
   color:#303030;
   font-weight: normal;
   height: 0.3rem;
+  line-height: 0.28rem;
 }
 .infinite-scroll{
   width: 0.5rem;

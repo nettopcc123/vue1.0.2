@@ -102,7 +102,7 @@ export default {
    },
   mounted:function(){
       this.$nextTick(() => {//在下次 DOM 更新循环结束之后执行延迟回调
-         this.fetchDatas(1,3);
+       //  this.fetchDatas(1,3);
       })
   },
   computed:{
@@ -379,6 +379,9 @@ input, textarea, select, button {
 input, textarea, select, button, meter, progress {
     -webkit-writing-mode: horizontal-tb;
 }
+hr{
+ height:1px;border:none;border-top:1px dotted #bbbaba   
+}
 button{
     display: inline-block;
     margin-bottom: 0;
@@ -406,11 +409,11 @@ button{
 }
 @font-face {
   font-family: 'iconfont';  /* project id 880675 */
-  src: url('//at.alicdn.com/t/font_880675_tzxh8imfxe9.eot');
-  src: url('//at.alicdn.com/t/font_880675_tzxh8imfxe9.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_880675_tzxh8imfxe9.woff') format('woff'),
-  url('//at.alicdn.com/t/font_880675_tzxh8imfxe9.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_880675_tzxh8imfxe9.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_880675_mn098a1cgqk.eot');
+  src: url('//at.alicdn.com/t/font_880675_mn098a1cgqk.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_880675_mn098a1cgqk.woff') format('woff'),
+  url('//at.alicdn.com/t/font_880675_mn098a1cgqk.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_880675_mn098a1cgqk.svg#iconfont') format('svg');
 }
 .iconfont {
     font-family: "iconfont" !important;
@@ -472,6 +475,12 @@ button{
 .icon-feedback:before {
     content: "\e652";
 }
+.icon-down:before {
+    content: "\e617";
+}
+.icon-back:before{
+    content: "\e8f4";
+}
 .fico{
     display: block;
     font-size:0.2rem;
@@ -498,10 +507,14 @@ button{
 .itit{
     display: block;
     line-height: 0.36rem;
-    border-left: 0.03rem solid $bgColor;
     padding-left:0.15rem;
     font-size: 0.18rem;
-    text-align: left;
+    text-align: center;
+    background:#eaeaea;
+    color:#666666;
+}
+.itit i{
+    float:left;
 }
 .itit a{
     float:right;
@@ -511,19 +524,17 @@ button{
 }
 .nlist{
     display: block;
-    padding:0.1rem 0rem;
 }
 .nlist li{
     display: block;
     overflow: hidden;
-    padding:0px 0.1rem
 }
 .vrw{
     position:relative;
     z-index: 0;
-    height: 100%;
     overflow-x: hidden;
     width: 100%;
+    height: 85%;
 }
 .child-view {  
   position: absolute;  

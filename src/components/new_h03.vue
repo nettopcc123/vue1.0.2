@@ -50,8 +50,8 @@ export default {
   filters:{
     filter:function(value){
         if (!value) return '';
-        if (value.length > 40) {
-          return value.slice(0,40) + '...';
+        if (value.length > 20) {
+          return value.slice(0,20) + '...';
         }
         return value;
     }
@@ -193,7 +193,8 @@ export default {
 @import "scss/base.scss";
 .nimg{
     float: left;
-    width:1.2rem;
+    width:35%;
+    text-align: center;
 }
 .nimgbig{
     width:100%;
@@ -210,7 +211,8 @@ export default {
   margin-bottom:0.05rem;
   text-align: left;
   font-size: 0.16rem;
-  color:#5b5b5b
+  color:#5b5b5b;
+  padding:0 2%;
 }
 .nlist li a{
   font-size: 0.16rem;
@@ -221,6 +223,7 @@ export default {
   color:#303030;
   font-weight: normal;
   height: 0.65rem;
+  line-height: 0.28rem;
 }
 .ntitbig{
   font-size: 0.18rem;
@@ -234,7 +237,7 @@ export default {
   margin:0 auto;
 }
 .nimg img{
-  width: 1.2rem;
+  width: 100%;
   height:0.8rem;
 }
 .nimgbig img{
@@ -243,7 +246,7 @@ export default {
 }
 .newsCtn{
     float: right;
-    width:2.1rem;
+    width:62%;
 }
 .newsCtnbig{
     width:100%;

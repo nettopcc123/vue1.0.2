@@ -7,8 +7,8 @@
     <h2 class="uitit02">要闻 </h2>
     <vue-newlists></vue-newlists>
     <h2 class="uitit01">体育赛事 <span></span></h2>
-    <div class="iftop01">
-       <iframe ref="iframe" id="bdIframe01" :src="bdTokenUrl01" frameborder="0" scrolling="no" width="100%" height="500px" ></iframe>
+    <div class="iftop01" @click="selectStyle">
+       <iframe ref="iframe" id="bdIframe01" :src="bdTokenUrl01" frameborder="0" scrolling="no" width="100%" height="500px"></iframe>
     </div>
     <!-- <div class="gamhb">
       <iframe ref="iframe" id="bdIframe" :src="bdTokenUrl" frameborder="0" scrolling="no" width="100%" height="200px" ></iframe>
@@ -61,6 +61,9 @@ export default {
     chengifCss() {
       var test = document.getElementById('bdIframe01').contentWindow.document.getElementsByTagName('header');
           test.style.background = "#333";
+    },
+    selectStyle() {
+      console.log("dfddfdf");
     }
   }
 }
@@ -99,7 +102,7 @@ export default {
     text-align: left;
     background:#65acda!important;
     color: #fff;
-       z-index:11;
+    z-index:11;
    position: relative;
 }
 .uitit01 span{

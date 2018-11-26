@@ -103,8 +103,8 @@ export default {
   filters:{
     filter:function(value){
         if (!value) return '';
-        if (value.length > 40) {
-          return value.slice(0,40) + '...';
+        if (value.length > 20) {
+          return value.slice(0,20) + '...';
         }
         return value;
     }
@@ -248,7 +248,7 @@ export default {
 @import "scss/base.scss";
 .nimg{
     float: left;
-    width:1.2rem;
+    width:35%;
 }
 .nimgbig{
     width:100%;
@@ -276,6 +276,7 @@ export default {
   color:#303030;
   font-weight: normal;
   height: 0.65rem;
+  line-height: 0.28rem;
 }
 .ntitbig{
   font-size: 0.18rem;
@@ -298,7 +299,7 @@ export default {
 }
 .newsCtn{
     float: right;
-    width:2.1rem;
+    width:62%;
 }
 .newsCtnbig{
     width:100%;

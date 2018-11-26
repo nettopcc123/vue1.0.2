@@ -19,6 +19,12 @@ const newlists = r => require.ensure([],() => r(require('@/components/newlists.v
 const newlists1 = r => require.ensure([],() => r(require('@/components/newlists1')), 'newlists1');
 const newlists2 = r => require.ensure([],() => r(require('@/components/newlists2')), 'newlists2');
 const newlists3 = r => require.ensure([],() => r(require('@/components/newlists3')), 'newlists3');
+
+const newlists4 = r => require.ensure([],() => r(require('@/components/newlists4')), 'newlists4');
+const newlists5 = r => require.ensure([],() => r(require('@/components/newlists5')), 'newlists5');
+const newlists6 = r => require.ensure([],() => r(require('@/components/newlists6')), 'newlists6');
+const newlists7 = r => require.ensure([],() => r(require('@/components/newlists7')), 'newlists7');
+
 const newsMore = r => require.ensure([],() => r(require('@/components/newsMore')), 'newsMore');
 const newsMore1 = r => require.ensure([],() => r(require('@/components/newsMore1')), 'newsMore1');
 const lotts = r => require.ensure([],() => r(require('@/components/lotts')), 'lotts');
@@ -79,7 +85,7 @@ export default new Router({
       path: '/news',
       name: 'news',
       component: news,
-      redirect: '/newlists1',
+      redirect: '/newlists3',
       children: [
         {
           path: '/newlists1',
@@ -95,6 +101,26 @@ export default new Router({
           path: '/newlists3',
           name: 'newlists3',
           component: newlists3
+        },
+        {
+          path: '/newlists4',
+          name: 'newlists4',
+          component: newlists4
+        },
+        {
+          path: '/newlists5',
+          name: 'newlists5',
+          component: newlists5
+        },
+        {
+          path: '/newlists6',
+          name: 'newlists6',
+          component: newlists6
+        },
+        {
+          path: '/newlists7',
+          name: 'newlists7',
+          component: newlists7
         }
       ]
     },{

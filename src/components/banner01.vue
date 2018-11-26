@@ -2,16 +2,10 @@
 <div id="container">
  <swiper :options="swiperOption" ref="mySwiper">
   <swiper-slide class="swiper-slide games">
-   <img :src="require('./../components/img/banner_h03.jpg?1111')" alt="">
+   <img :src="require('./../components/img/banner_h03_1.jpg?1111')" alt="">
   </swiper-slide>
   <swiper-slide class="swiper-slide games">
-   <img :src="require('./../components/img/banner_h04.jpg?1111')" alt="">
-  </swiper-slide>
-  <swiper-slide class="swiper-slide games">
-   <img :src="require('./../components/img/banner_h05.jpg?1111')" alt="">
-  </swiper-slide>
-  <swiper-slide class="swiper-slide games">
-   <img :src="require('./../components/img/banner_h06.jpg?1111')" alt="">
+   <img :src="require('./../components/img/banner_h04_1.jpg?1111')" alt="">
   </swiper-slide>
   <div class="swiper-pagination" slot="pagination"></div>
   <!-- <div class="swiper-button-prev" slot="button-prev"></div>

@@ -246,7 +246,7 @@ export default {
 @import "scss/base.scss";
 .nimg{
     float: left;
-    width:1.2rem;
+    width:35%;
 }
 .nimgbig{
     width:100%;
@@ -274,6 +274,7 @@ export default {
   color:#303030;
   font-weight: normal;
   height: 0.65rem;
+  line-height: 0.28rem;
 }
 .ntitbig{
   font-size: 0.18rem;
@@ -296,7 +297,7 @@ export default {
 }
 .newsCtn{
     float: right;
-    width:2.1rem;
+    width:62%;
 }
 .newsCtnbig{
     width:100%;
