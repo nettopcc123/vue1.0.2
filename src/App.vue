@@ -76,12 +76,12 @@ export default {
 　　    this.$router.isBack = false;
 　　},
     $route(to,from){
-        if(to.path == '/newsMore1'){ //用户中心
+        if(to.path == '/newsMore1' || to.path == '/newsMore2'){ //用户中心
             this.isHeard = false;
         }else{
             this.isHeard = true;
         }
-        if(to.path == '/newsMore' || to.path == '/newsMore1' || to.path == '/newlists1' || to.path == '/newlists2' || to.path == '/newlists3'){ //新闻中心
+        if(to.path == '/newsMore' || to.path == '/newsMore1' || to.path == '/newsMore2' || to.path == '/newlists1' || to.path == '/newlists2' || to.path == '/newlists3'){ //新闻中心
             this.isNews = true;
             this.isBanner = false;
         }else{

@@ -275,7 +275,7 @@ export default {
   font-size: 0.16rem;
   color:#303030;
   font-weight: normal;
-  height: 0.65rem;
+  height: 0.5rem;
   line-height: 0.28rem;
 }
 .ntitbig{

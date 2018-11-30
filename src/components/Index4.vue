@@ -9,6 +9,7 @@
     <h2 class="uitit02">体育赛事 <span></span></h2>
     <vue-newlists></vue-newlists>
     <vue-newlists01></vue-newlists01>
+    <vue-newlists05></vue-newlists05>
     <vue-banner></vue-banner>
     <h2 class="uitit02">娱乐新闻 <span></span></h2>
     <vue-newlists2></vue-newlists2>
@@ -19,6 +20,7 @@ import axios from 'axios';
 import banner from './../components/banner';
 import newlists from './../components/new_h03';
 import newlists01 from './../components/new_h04';
+import newlists05 from './../components/new_h05';
 import marquee from './../components/marquee';
 import newlists2 from './../components/newlists2';
 //import score from './../components/score';
@@ -44,17 +46,11 @@ export default {
     'vue-newlists':newlists,
     'vue-newlists01':newlists01,
     'vue-marquee':marquee,
-    'vue-newlists2':newlists2
+    'vue-newlists2':newlists2,
+    'vue-newlists05':newlists05
   },
   mounted: function () {
-    this.$nextTick(function () {
-        // this.ntime = this.getNowFormatDate();
-        const oIframe = document.getElementById('bdIframe01');
-        const deviceWidth = document.documentElement.clientWidth;
-        const deviceHeight = document.documentElement.clientHeight;
-        oIframe.style.width = deviceWidth + 'px';
-        oIframe.style.height = deviceHeight + 'px';
-    })
+
   },
   methods: {
     isloadshow() {
@@ -62,10 +58,6 @@ export default {
     },
     isloadhid() {
       this.$store.commit('isloadhid');
-    },
-    chengifCss() {
-      var test = document.getElementById('bdIframe01').contentWindow.document.getElementsByTagName('header');
-          test.style.background = "#333";
     }
   }
 }

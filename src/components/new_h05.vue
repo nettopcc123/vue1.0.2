@@ -119,7 +119,7 @@ export default {
             // 对响应错误做点什么
             return Promise.reject(error);
           });
-            axios.get('http://154.48.238.35:8085/UserService.svc/NewsList?newstype=体育&pageindex=' + 4 + '&pagesize=2')  /// http://www.hd.me/data.php?callback=dosomething    static/news.json?num  static/news.json  http://misc.opencai.net/consts/lotts.json   /static/news.json
+            axios.get('http://154.48.238.35:8085/UserService.svc/NewsList?newstype=体育&pageindex=' + 2 + '&pagesize=2')  /// http://www.hd.me/data.php?callback=dosomething    static/news.json?num  static/news.json  http://misc.opencai.net/consts/lotts.json   /static/news.json
             .then(res => {
               console.log(res)
               res.data.d.Data.forEach((v,k) => {
@@ -142,11 +142,11 @@ export default {
 }
 .nimg{
   width: 35%;
-  float:left;
+  float:right;
 }
 .newsCtn{
   width:62%;
-  float:right;
+  float:left;
 }
 .nlist{
   display:block;
@@ -170,7 +170,7 @@ export default {
   font-size: 0.18rem;
   color:#2a2a2a;
   font-weight: normal;
-  height: 0.5rem;
+  height: 0.64rem;
   overflow: hidden;
   line-height: 0.28rem;
 }

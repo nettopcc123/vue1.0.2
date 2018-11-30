@@ -27,6 +27,7 @@ const newlists7 = r => require.ensure([],() => r(require('@/components/newlists7
 
 const newsMore = r => require.ensure([],() => r(require('@/components/newsMore')), 'newsMore');
 const newsMore1 = r => require.ensure([],() => r(require('@/components/newsMore1')), 'newsMore1');
+const newsMore2 = r => require.ensure([],() => r(require('@/components/newsMore2')), 'newsMore2');
 const lotts = r => require.ensure([],() => r(require('@/components/lotts')), 'lotts');
 const lottsmore = r => require.ensure([],() => r(require('@/components/lottsmore')), 'lottsmore');
 const user = r => require.ensure([],() => r(require('@/components/user')), 'user');
@@ -141,6 +142,11 @@ export default new Router({
       path: '/newsMore1',
       name: 'newsMore1',
       component: newsMore1
+    },
+    {
+      path: '/newsMore2',
+      name: 'newsMore2',
+      component: newsMore2
     },
     {
       path: '/lotts',
